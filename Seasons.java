@@ -1,13 +1,13 @@
 // ITC 115 - Fall 2018
-// Write a method called season that takes as parameters two integers
-// representing a month and day and returns an integer between 1 and
-// 12 (1 for January, 2 for February, etc.) and that the day of the 
-// month is a number between 1 and 31. If the date falls between 
-// 12/16 and 3/15, the method should return "winter". If the date
-// falls between 3/16 and 6/15, the method should return "spring".
-// If the date falls between 6/16 and 9/15, the method should return
-// "summer". And if the date falls between 9/16 and 12/15, the method
-// should return "fall".
+// Assignment 4
+
+/* 
+ Write a method called season that takes as parameters two integers representing a month and day and returns 
+ an integer between 1 and 12 (1 for January, 2 for February, etc.) and that the day of the  month is a number 
+ between 1 and 31. If the date falls between 12/16 and 3/15, the method should return "winter". If the date
+ falls between 3/16 and 6/15, the method should return "spring". If the date falls between 6/16 and 9/15, the 
+ method should return "summer". And if the date falls between 9/16 and 12/15, the method should return "fall".
+ */
 
 import java.util.Scanner;
 
@@ -22,7 +22,6 @@ public class Seasons {
 		System.out.print("Enter the day in numeric format (0-31): ");
 		int date = console.nextInt();
 		
-		// winter
 		if ((month == 12 && date >= 16) || month == 1 || month == 2 || (month == 3 && date <= 15)){
 			season = "winter";
 		} else if ((month == 3 && date >= 16) || month == 4 || month == 5 || (month == 6 && date <= 15)){
