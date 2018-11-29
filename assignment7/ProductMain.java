@@ -1,4 +1,4 @@
-// client for Product class
+// client for Product object
 
 public class ProductMain {
 
@@ -10,11 +10,11 @@ public class ProductMain {
 		Product drums = new Product(58378, "Drumset", 799.99, 2);
 		
 		// change some prices
-		guitar.changePrice(419.99);
-		drums.changePrice(829.99);
+		guitar.setPrice(419.99);
+		drums.setPrice(829.99);
 		
 		// display product info
-		System.out.println(guitar.toString());
+		System.out.println(guitar.toString());		
 		System.out.println();
 		System.out.println(keyboard.toString());
 		System.out.println();
@@ -22,7 +22,7 @@ public class ProductMain {
 		System.out.println();
 		
 		// show number of products
-		System.out.println("Products available: " + Product.count);
+		System.out.println("Products available: " + Product.getCount());
 		
 	}
 }
