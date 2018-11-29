@@ -1,7 +1,6 @@
 // the Product object represents a generic product
 
 import java.text.NumberFormat;
-import java.util.UUID;
 
 public class Product {
 
