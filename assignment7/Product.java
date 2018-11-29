@@ -9,7 +9,7 @@ public class Product {
 	private String productDescription;
 	private double price;
 	private int productCount;
-	public static int count = 0;
+	private static int count = 0;
 	
 	// constructor
 	public Product(int productCode,
@@ -28,7 +28,6 @@ public class Product {
 	public int getProductCode() {
 		return productCode;
 	}
-
 	public void setProductCode(int productCode) {
 		this.productCode = productCode;
 	}
@@ -36,7 +35,6 @@ public class Product {
 	public String getProductDescription() {
 		return productDescription;
 	}
-
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
 	}
@@ -44,14 +42,24 @@ public class Product {
 	public int getProductCount() {
 		return productCount;
 	}
-
 	public void setProductCount(int productCount) {
 		this.productCount = productCount;
 	}
 
+	public double getPrice() {
+		return price;
+	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	
+	public static int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
 
 	// method to format price
 	 public String getPriceFormatted() 
