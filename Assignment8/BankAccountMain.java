@@ -4,8 +4,11 @@ public class BankAccountMain {
 
 	public static void main(String[] args) {
 
-			BankAccount joe = new BankAccount("Joe", 2397.23, 0.00);
-			BankAccount elizabeth = new BankAccount("Elizabeth", 93.34, 0.00);
+			BankAccount joe = new BankAccount("Joe", 2397.23, 3.00);
+			BankAccount elizabeth = new BankAccount("Elizabeth", 93.34, 5.00);
+			
+			// edit transaction fee
+			joe.setTransactionFee(3.50);
 			
 			// make a deposit
 			joe.deposit(329.57);
